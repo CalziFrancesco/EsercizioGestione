@@ -1,0 +1,73 @@
+<!-- FORM AGGIUNTA RIMOZIONE INVIO-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="stile.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Modulo inserimento personale</h1>
+    <form id="ListaPersone" action="saluto.html" method="POST" onsubmit="return inviaModulo()">
+        <fieldset>
+            <legend>Dati personali</legend>
+            <label for="name">Nome:</label><br>
+            <input type="text" id="name" name="name" placeholder="Type here" class="input input-bordered input-warning w-full max-w-xs centratore"><br>
+
+            <label for="surname">Cognome:</label><br>
+            <input type="text" id="surname" name="surname" placeholder="Type here" class="input input-bordered input-warning w-full max-w-xs"><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Type here" class="input input-bordered input-warning w-full max-w-xs"><br>
+
+            <label for="birthdate">Data di nascita:</label><br>
+            <input type="date" id="birthdate" name="birthdate" class="input input-bordered input-warning w-full max-w-xs"><br>
+
+            <label for="phone">Numero di Telefono:</label><br>
+            <input type="tel" id="phone" name="phone" placeholder="Type here" class="input input-bordered input-warning w-full max-w-xs"><br>
+
+            <label for="country">Paese:</label><br>
+            <input type="text" id="country" name="country" placeholder="Type here" class="input input-bordered input-warning w-full max-w-xs"><br>
+
+            <label for="province">Provincia:</label><br>
+            <input type="text" id="province" name="province" placeholder="Type here" class="input input-bordered input-warning w-full max-w-xs"><br>
+        </fieldset>
+
+        <div>
+            <button type="button" onclick="aggiungiPersona()" class="btn btn-outline btn-info">Aggiungi Persona</button>
+            <button type="submit" class="btn btn-outline btn-info">Invia modulo</button>
+        </div>
+        </body>
+    </form>
+
+    <div id="mostraDati">
+
+
+    </div>
+
+    <h2>Elenco Persone</h2>
+    <table id="tabellaPersone" border="1" class="table table-xs table-pin-rows table-pin-cols">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Cognome</th>
+                <th>Email</th>
+                <th>Data di Nascita</th>
+                <th>Numero di Telefono</th>
+                <th>Paese</th>
+                <th>Provincia</th>
+                <th>Azione</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script type="text/javascript" src="script.js"></script>
+
+    </html>
+</body>
+</html>

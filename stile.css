@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+legend {
+    text-align: center;
+}
+
+label {
+    text-align: center;
+}
+
+div {
+    display: flex;
+    justify-content: center; /* Centra i bottoni */
+    gap: 2.5rem; /* Spazio tra i bottoni */
+    margin-top: 2.5rem; /* Aggiunge margine sopra il div dei bottoni */
+}
