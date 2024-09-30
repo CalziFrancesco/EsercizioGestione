@@ -26,7 +26,7 @@ label {
 
 div {
     display: flex;
-    justify-content: center; /* Centra i bottoni */
-    gap: 2.5rem; /* Spazio tra i bottoni */
-    margin-top: 2.5rem; /* Aggiunge margine sopra il div dei bottoni */
+    justify-content: center;
+    gap: 2.5rem;
+    margin-top: 2.5rem;
 }
